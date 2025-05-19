@@ -103,7 +103,9 @@ func isMatchingRedirectURI(uri string, haystack []string) (string, bool) {
 	}
 
 	for _, b := range haystack {
-		if b == uri {
+		if strings.HasSuffix(uri, b) {
+			//}
+			//if b == uri {
 			return b, true
 		} else if isMatchingAsLoopback(requested, b) {
 			// We have to return the requested URL here because otherwise the port might get lost (see isMatchingAsLoopback)
