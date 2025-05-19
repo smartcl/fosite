@@ -30,8 +30,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/handler/oauth2"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/handler/oauth2"
 )
 
 type tokenHandler struct {
@@ -94,9 +94,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/storage"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/compose"
+	"github.com/smartcl/fosite/storage"
 )
 
 func main() {
