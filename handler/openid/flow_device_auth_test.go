@@ -9,15 +9,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ory/fosite/internal"
+	"github.com/smartcl/fosite/internal"
 	gomock "go.uber.org/mock/gomock"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/handler/rfc8628"
-	"github.com/ory/fosite/token/hmac"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/handler/rfc8628"
+	"github.com/smartcl/fosite/token/hmac"
+	"github.com/smartcl/fosite/token/jwt"
 )
 
 func TestDeviceAuth_HandleDeviceEndpointRequest(t *testing.T) {

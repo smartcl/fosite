@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/ory/fosite"
+	"github.com/smartcl/fosite"
 )
 
 type OpenIDConnectTokenStrategy interface {

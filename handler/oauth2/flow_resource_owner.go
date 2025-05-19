@@ -11,7 +11,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/ory/fosite"
+	"github.com/smartcl/fosite"
 )
 
 var _ fosite.TokenEndpointHandler = (*ResourceOwnerPasswordCredentialsGrantHandler)(nil)

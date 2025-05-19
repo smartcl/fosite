@@ -16,9 +16,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/integration/clients"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/compose"
+	"github.com/smartcl/fosite/integration/clients"
 )
 
 type authorizeJWTBearerRequiredIATSuite struct {

@@ -10,13 +10,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ory/fosite/internal/gen"
+	"github.com/smartcl/fosite/internal/gen"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/token/jwt"
 )
 
 func TestIntrospectJWT(t *testing.T) {

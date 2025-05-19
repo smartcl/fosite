@@ -14,11 +14,11 @@ import (
 	"github.com/stretchr/testify/require"
 	goauth "golang.org/x/oauth2"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/handler/oauth2"
-	"github.com/ory/fosite/handler/openid"
-	"github.com/ory/fosite/internal"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/compose"
+	"github.com/smartcl/fosite/handler/oauth2"
+	"github.com/smartcl/fosite/handler/openid"
+	"github.com/smartcl/fosite/internal"
 )
 
 func TestAuthorizeCodeFlow(t *testing.T) {

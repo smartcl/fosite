@@ -8,7 +8,7 @@ import (
 
 	"github.com/ory/x/errorsx"
 
-	"github.com/ory/fosite"
+	"github.com/smartcl/fosite"
 )
 
 type coreValidatorConfigProvider interface {

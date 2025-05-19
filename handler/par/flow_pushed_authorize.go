@@ -10,9 +10,9 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/token/hmac"
 	"github.com/ory/x/errorsx"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/token/hmac"
 )
 
 const (

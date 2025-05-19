@@ -8,8 +8,6 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-
-	. "github.com/ory/fosite/token/jwt"
 )
 
 var jwtClaims = &JWTClaims{

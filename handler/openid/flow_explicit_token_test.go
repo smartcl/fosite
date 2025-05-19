@@ -14,9 +14,9 @@ import (
 	"github.com/stretchr/testify/require"
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/internal"
+	"github.com/smartcl/fosite/token/jwt"
 )
 
 func TestHandleTokenEndpointRequest(t *testing.T) {

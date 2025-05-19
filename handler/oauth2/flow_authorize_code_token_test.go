@@ -13,11 +13,11 @@ import (
 
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/ory/fosite/internal"
+	"github.com/smartcl/fosite/internal"
 
-	"github.com/ory/fosite" //"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/storage"
 	"github.com/pkg/errors"
+	"github.com/smartcl/fosite" //"github.com/smartcl/fosite/internal"
+	"github.com/smartcl/fosite/storage"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

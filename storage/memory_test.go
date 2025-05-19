@@ -9,7 +9,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ory/fosite"
+	"github.com/smartcl/fosite"
 )
 
 func TestMemoryStore_Authenticate(t *testing.T) {

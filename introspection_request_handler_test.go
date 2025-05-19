@@ -15,11 +15,10 @@ import (
 	"github.com/stretchr/testify/require"
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/ory/fosite"
-	. "github.com/ory/fosite"
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/storage"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/compose"
+	"github.com/smartcl/fosite/internal"
+	"github.com/smartcl/fosite/storage"
 )
 
 func TestIntrospectionResponseTokenUse(t *testing.T) {

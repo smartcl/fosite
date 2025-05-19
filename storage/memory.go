@@ -12,8 +12,8 @@ import (
 	"github.com/go-jose/go-jose/v3"
 	"github.com/google/uuid"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/internal"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/internal"
 )
 
 type MemoryUserRelation struct {

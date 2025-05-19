@@ -19,7 +19,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/ory/fosite"
+	"github.com/smartcl/fosite"
 )
 
 type HMACStrategyConfigurator interface {

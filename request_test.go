@@ -9,8 +9,6 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-
-	. "github.com/ory/fosite"
 )
 
 func TestRequest(t *testing.T) {

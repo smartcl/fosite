@@ -15,8 +15,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	gomock "go.uber.org/mock/gomock"
 
-	. "github.com/ory/fosite"
-	"github.com/ory/fosite/internal"
+	"github.com/smartcl/fosite/internal"
 )
 
 func TestNewRevocationRequest(t *testing.T) {

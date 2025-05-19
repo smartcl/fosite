@@ -12,17 +12,17 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ory/fosite/internal/gen"
+	"github.com/smartcl/fosite/internal/gen"
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	goauth "golang.org/x/oauth2"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/handler/openid"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/compose"
+	"github.com/smartcl/fosite/handler/openid"
+	"github.com/smartcl/fosite/token/jwt"
 )
 
 func TestOIDCImplicitFlowPublicClientPKCE(t *testing.T) {

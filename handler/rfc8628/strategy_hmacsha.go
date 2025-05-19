@@ -12,8 +12,8 @@ import (
 
 	"github.com/ory/x/randx"
 
-	"github.com/ory/fosite"
-	enigma "github.com/ory/fosite/token/hmac"
+	"github.com/smartcl/fosite"
+	enigma "github.com/smartcl/fosite/token/hmac"
 )
 
 // DefaultDeviceStrategy implements the default device strategy

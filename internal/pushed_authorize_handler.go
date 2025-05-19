@@ -9,7 +9,7 @@ import (
 
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/ory/fosite"
+	"github.com/smartcl/fosite"
 )
 
 // MockPushedAuthorizeEndpointHandler is a mock of PushedAuthorizeEndpointHandler interface

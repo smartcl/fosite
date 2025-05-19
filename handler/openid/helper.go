@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ory/fosite"
+	"github.com/smartcl/fosite"
 )
 
 type IDTokenHandleHelper struct {

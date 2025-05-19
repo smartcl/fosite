@@ -9,15 +9,15 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/ory/fosite/internal/gen"
+	"github.com/smartcl/fosite/internal/gen"
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/smartcl/fosite"
+	"github.com/smartcl/fosite/internal"
+	"github.com/smartcl/fosite/token/jwt"
 )
 
 // expose key to verify id_token

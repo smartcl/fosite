@@ -7,8 +7,8 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/text/language"
 
-	"github.com/ory/fosite/i18n"
 	"github.com/ory/x/errorsx"
+	"github.com/smartcl/fosite/i18n"
 )
 
 // AddLocalizerToErr augments the error object with the localizer

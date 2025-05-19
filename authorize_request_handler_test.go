@@ -14,9 +14,6 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	gomock "go.uber.org/mock/gomock"
-
-	. "github.com/ory/fosite"
-	. "github.com/ory/fosite/internal"
 )
 
 // Should pass
