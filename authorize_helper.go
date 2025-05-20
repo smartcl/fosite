@@ -73,8 +73,10 @@ func MatchRedirectURIWithClientRedirectURIs(rawurl string, client Client) (*url.
 	} else if redirectTo, ok := isMatchingRedirectURI(rawurl, client.GetRedirectURIs()); rawurl != "" && ok {
 		// If a redirect_uri was given and the clients knows it (simple string comparison!)
 		// return it.
+		fmt.Println("--------------here10---------------", "\n", redirectTo)
 		if parsed, err := url.Parse(redirectTo); err == nil && IsValidRedirectURI(parsed) {
 			// If no redirect_uri was given and the client has exactly one valid redirect_uri registered, use that instead
+			fmt.Println("--------------here20---------------", "\n", parsed)
 			return parsed, nil
 		}
 	}
