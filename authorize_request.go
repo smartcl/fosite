@@ -44,6 +44,7 @@ func (d *AuthorizeRequest) IsRedirectURIValid() bool {
 	if d.GetRedirectURI() == nil {
 		fmt.Println("________________here14_____________")
 		fmt.Println(d.GetRedirectURI())
+		fmt.Println(d.GetRedirectURI())
 		return false
 	}
 
