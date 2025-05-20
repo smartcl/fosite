@@ -12,14 +12,14 @@ import (
 
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/smartcl/fosite/internal"
+	"github.com/ory/fosite/internal"
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/storage"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/storage"
 )
 
 func TestRefreshFlow_HandleTokenEndpointRequest(t *testing.T) {

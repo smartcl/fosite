@@ -10,7 +10,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/smartcl/fosite"
+	"github.com/ory/fosite"
 )
 
 type TokenRevocationHandler struct {

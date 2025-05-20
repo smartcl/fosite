@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/ory/fosite/i18n"
 	"github.com/ory/x/errorsx"
 	"github.com/ory/x/otelx"
-	"github.com/smartcl/fosite/i18n"
 	"go.opentelemetry.io/otel/trace"
 
 	"github.com/pkg/errors"
@@ -42,7 +42,7 @@ import (
 //     client MUST authenticate with the authorization server as described
 //     in Section 3.2.1.
 func (f *Fosite) NewAccessRequest(ctx context.Context, r *http.Request, session Session) (_ AccessRequester, err error) {
-	ctx, span := trace.SpanFromContext(ctx).TracerProvider().Tracer("github.com/smartcl/fosite").Start(ctx, "Fosite.NewAccessRequest")
+	ctx, span := trace.SpanFromContext(ctx).TracerProvider().Tracer("github.com/ory/fosite").Start(ctx, "Fosite.NewAccessRequest")
 	defer otelx.End(span, &err)
 
 	accessRequest := NewAccessRequest(session)

@@ -13,10 +13,10 @@ import (
 	"github.com/go-jose/go-jose/v3"
 	"go.opentelemetry.io/otel/trace"
 
+	"github.com/ory/fosite/i18n"
+	"github.com/ory/fosite/token/jwt"
 	"github.com/ory/x/errorsx"
 	"github.com/ory/x/otelx"
-	"github.com/smartcl/fosite/i18n"
-	"github.com/smartcl/fosite/token/jwt"
 
 	"github.com/pkg/errors"
 
@@ -176,13 +176,16 @@ func (f *Fosite) validateAuthorizeRedirectURI(_ *http.Request, request *Authoriz
 		return errorsx.WithStack(ErrInvalidRequest.WithHint("The 'redirect_uri' parameter is required when using OpenID Connect 1.0."))
 	}
 
+	fmt.Printf("_________________-rawRedirURI: %s", rawRedirURI)
 	// Validate redirect uri
 	redirectURI, err := MatchRedirectURIWithClientRedirectURIs(rawRedirURI, request.Client)
 	if err != nil {
+		fmt.Printf("_________________-err: %s", err.Error())
 		return err
 	} else if !IsValidRedirectURI(redirectURI) {
 		return errorsx.WithStack(ErrInvalidRequest.WithHintf("The redirect URI '%s' contains an illegal character (for example #) or is otherwise invalid.", redirectURI))
 	}
+	fmt.Printf("_________________-redirectURI: %s", redirectURI)
 	request.RedirectURI = redirectURI
 	return nil
 }
@@ -324,7 +327,7 @@ func (f *Fosite) authorizeRequestFromPAR(ctx context.Context, r *http.Request, r
 }
 
 func (f *Fosite) NewAuthorizeRequest(ctx context.Context, r *http.Request) (_ AuthorizeRequester, err error) {
-	ctx, span := trace.SpanFromContext(ctx).TracerProvider().Tracer("github.com/smartcl/fosite").Start(ctx, "Fosite.NewAuthorizeRequest")
+	ctx, span := trace.SpanFromContext(ctx).TracerProvider().Tracer("github.com/ory/fosite").Start(ctx, "Fosite.NewAuthorizeRequest")
 	defer otelx.End(span, &err)
 
 	return f.newAuthorizeRequest(ctx, r, false)

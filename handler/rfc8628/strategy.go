@@ -6,7 +6,7 @@ package rfc8628
 import (
 	"context"
 
-	"github.com/smartcl/fosite"
+	"github.com/ory/fosite"
 )
 
 // RFC8628CodeStrategy is the code strategy needed for the DeviceAuthHandler

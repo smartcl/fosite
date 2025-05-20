@@ -7,8 +7,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/token/jwt"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/token/jwt"
 )
 
 type StatelessJWTValidator struct {

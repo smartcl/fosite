@@ -13,8 +13,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/token/hmac"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/token/hmac"
 )
 
 var hmacshaStrategy = DefaultDeviceStrategy{

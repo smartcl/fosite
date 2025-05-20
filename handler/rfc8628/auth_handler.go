@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/ory/fosite"
 	"github.com/ory/x/errorsx"
 	"github.com/pkg/errors"
-	"github.com/smartcl/fosite"
 )
 
 // MaxAttempts for retrying the generation of user codes.

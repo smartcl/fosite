@@ -8,8 +8,8 @@ import (
 
 	"github.com/mohae/deepcopy"
 
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/token/jwt"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/token/jwt"
 )
 
 type JWTSessionContainer interface {

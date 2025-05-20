@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/require"
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/smartcl/fosite/internal"
+	"github.com/ory/fosite/internal"
 )
 
 func TestNewAccessResponse(t *testing.T) {

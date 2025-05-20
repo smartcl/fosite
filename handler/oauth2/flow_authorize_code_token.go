@@ -9,11 +9,11 @@ import (
 
 	"github.com/ory/x/errorsx"
 
-	"github.com/smartcl/fosite/storage"
+	"github.com/ory/fosite/storage"
 
 	"github.com/pkg/errors"
 
-	"github.com/smartcl/fosite"
+	"github.com/ory/fosite"
 )
 
 // HandleTokenEndpointRequest implements

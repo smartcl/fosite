@@ -8,8 +8,8 @@ import (
 
 	"github.com/pkg/errors"
 
+	"github.com/ory/fosite"
 	"github.com/ory/x/errorsx"
-	"github.com/smartcl/fosite"
 )
 
 func (c *OpenIDConnectDeviceHandler) HandleTokenEndpointRequest(ctx context.Context, requester fosite.AccessRequester) error {

@@ -14,15 +14,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/smartcl/fosite/handler/rfc8628"
-	"github.com/smartcl/fosite/internal"
-	"github.com/smartcl/fosite/token/hmac"
-	"github.com/smartcl/fosite/token/jwt"
+	"github.com/ory/fosite/handler/rfc8628"
+	"github.com/ory/fosite/internal"
+	"github.com/ory/fosite/token/hmac"
+	"github.com/ory/fosite/token/jwt"
 	gomock "go.uber.org/mock/gomock"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/smartcl/fosite"
+	"github.com/ory/fosite"
 )
 
 func TestDeviceToken_HandleTokenEndpointRequest(t *testing.T) {

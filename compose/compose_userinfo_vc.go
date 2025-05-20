@@ -4,8 +4,8 @@
 package compose
 
 import (
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/handler/verifiable"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/handler/verifiable"
 )
 
 // OIDCUserinfoVerifiableCredentialFactory creates a verifiable credentials

@@ -8,13 +8,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/smartcl/fosite/handler/oauth2"
+	"github.com/ory/fosite/handler/oauth2"
 
 	"github.com/go-jose/go-jose/v3"
 	"github.com/go-jose/go-jose/v3/jwt"
 
+	"github.com/ory/fosite"
 	"github.com/ory/x/errorsx"
-	"github.com/smartcl/fosite"
 )
 
 // #nosec:gosec G101 - False Positive

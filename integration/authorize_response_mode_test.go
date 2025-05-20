@@ -12,21 +12,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/smartcl/fosite/internal/gen"
+	"github.com/ory/fosite/internal/gen"
 
 	"github.com/stretchr/testify/assert"
 
 	"github.com/pkg/errors"
 
-	"github.com/smartcl/fosite/handler/openid"
-	"github.com/smartcl/fosite/internal"
-	"github.com/smartcl/fosite/token/jwt"
+	"github.com/ory/fosite/handler/openid"
+	"github.com/ory/fosite/internal"
+	"github.com/ory/fosite/token/jwt"
 
 	"github.com/stretchr/testify/require"
 	goauth "golang.org/x/oauth2"
 
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/compose"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/compose"
 )
 
 func TestAuthorizeResponseModes(t *testing.T) {

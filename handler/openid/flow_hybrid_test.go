@@ -11,19 +11,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/smartcl/fosite/internal"
-	"github.com/smartcl/fosite/internal/gen"
+	"github.com/ory/fosite/internal"
+	"github.com/ory/fosite/internal/gen"
 
 	cristaljwt "github.com/cristalhq/jwt/v4"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/handler/oauth2"
-	"github.com/smartcl/fosite/storage"
-	"github.com/smartcl/fosite/token/hmac"
-	"github.com/smartcl/fosite/token/jwt"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/handler/oauth2"
+	"github.com/ory/fosite/storage"
+	"github.com/ory/fosite/token/hmac"
+	"github.com/ory/fosite/token/jwt"
 )
 
 var hmacStrategy = oauth2.NewHMACSHAStrategy(

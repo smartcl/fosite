@@ -12,21 +12,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/smartcl/fosite/internal"
-	"github.com/smartcl/fosite/internal/gen"
+	"github.com/ory/fosite/internal"
+	"github.com/ory/fosite/internal/gen"
 
 	"github.com/go-jose/go-jose/v3"
 	"github.com/gorilla/mux"
 	goauth "golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
 
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/handler/oauth2"
-	"github.com/smartcl/fosite/handler/openid"
-	"github.com/smartcl/fosite/integration/clients"
-	"github.com/smartcl/fosite/storage"
-	"github.com/smartcl/fosite/token/hmac"
-	"github.com/smartcl/fosite/token/jwt"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/handler/oauth2"
+	"github.com/ory/fosite/handler/openid"
+	"github.com/ory/fosite/integration/clients"
+	"github.com/ory/fosite/storage"
+	"github.com/ory/fosite/token/hmac"
+	"github.com/ory/fosite/token/jwt"
 )
 
 const (

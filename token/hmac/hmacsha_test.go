@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/smartcl/fosite"
+	"github.com/ory/fosite"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

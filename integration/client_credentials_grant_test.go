@@ -19,10 +19,10 @@ import (
 	"github.com/tidwall/gjson"
 	goauth "golang.org/x/oauth2"
 
-	"github.com/smartcl/fosite"
-	"github.com/smartcl/fosite/compose"
-	"github.com/smartcl/fosite/handler/oauth2"
-	"github.com/smartcl/fosite/internal"
+	"github.com/ory/fosite"
+	"github.com/ory/fosite/compose"
+	"github.com/ory/fosite/handler/oauth2"
+	"github.com/ory/fosite/internal"
 )
 
 func TestClientCredentialsFlow(t *testing.T) {

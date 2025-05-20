@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	gomock "go.uber.org/mock/gomock"
 
-	"github.com/smartcl/fosite"
+	"github.com/ory/fosite"
 )
 
 func TestNewAuthorizeResponse(t *testing.T) {

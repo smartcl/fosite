@@ -13,9 +13,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/smartcl/fosite/storage"
+	"github.com/ory/fosite/storage"
 
-	"github.com/smartcl/fosite"
+	"github.com/ory/fosite"
 )
 
 func parseURL(uu string) *url.URL {

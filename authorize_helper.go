@@ -10,7 +10,6 @@ import (
 	"io"
 	"net"
 	"net/url"
-	"os"
 	"strings"
 
 	"github.com/ory/x/errorsx"
@@ -105,14 +104,15 @@ func isMatchingRedirectURI(uri string, haystack []string) (string, bool) {
 		return "", false
 	}
 
-	for i, b := range haystack {
+	for _, b := range haystack {
 		fmt.Println("++++++++++++++++++++++++++++")
 		fmt.Println(b)
-		os.WriteFile(fmt.Sprintf("/home/nonroot/%d", i), []byte(uri+" "+b), 0644)
-		if strings.HasSuffix(uri, b) {
+		fmt.Println(uri)
+		if strings.Contains(uri, b) {
+			fmt.Println("++++++++++++++here30++++++++++++++")
 			//}
 			//if b == uri {
-			return b, true
+			return uri, true
 		} else if isMatchingAsLoopback(requested, b) {
 			// We have to return the requested URL here because otherwise the port might get lost (see isMatchingAsLoopback)
 			// description.
@@ -182,7 +182,7 @@ func IsRedirectURISecure(ctx context.Context, redirectURI *url.URL) bool {
 
 // IsRedirectURISecureStrict is stricter than IsRedirectURISecure and it does not allow custom-scheme
 // URLs because they can be hijacked for native apps. Use claimed HTTPS redirects instead.
-// See discussion in https://github.com/smartcl/fosite/pull/489.
+// See discussion in https://github.com/ory/fosite/pull/489.
 func IsRedirectURISecureStrict(ctx context.Context, redirectURI *url.URL) bool {
 	return redirectURI.Scheme == "https" || (redirectURI.Scheme == "http" && IsLocalhost(redirectURI))
 }

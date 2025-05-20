@@ -7,8 +7,8 @@ import (
 	"context"
 	"time"
 
+	"github.com/ory/fosite"
 	"github.com/ory/x/errorsx"
-	"github.com/smartcl/fosite"
 )
 
 const (
