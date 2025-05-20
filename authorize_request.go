@@ -4,6 +4,7 @@
 package fosite
 
 import (
+	"fmt"
 	"net/url"
 )
 
@@ -41,18 +42,22 @@ func NewAuthorizeRequest() *AuthorizeRequest {
 
 func (d *AuthorizeRequest) IsRedirectURIValid() bool {
 	if d.GetRedirectURI() == nil {
+		fmt.Println("________________here14_____________")
 		return false
 	}
 
 	raw := d.GetRedirectURI().String()
 	if d.GetClient() == nil {
+		fmt.Println("________________here15_____________")
 		return false
 	}
 
 	redirectURI, err := MatchRedirectURIWithClientRedirectURIs(raw, d.GetClient())
 	if err != nil {
+		fmt.Println("________________here16_____________")
 		return false
 	}
+	fmt.Println("________________here17_____________")
 	return IsValidRedirectURI(redirectURI)
 }
 

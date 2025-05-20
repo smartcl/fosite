@@ -106,7 +106,7 @@ func isMatchingRedirectURI(uri string, haystack []string) (string, bool) {
 	for i, b := range haystack {
 		fmt.Println("++++++++++++++++++++++++++++")
 		fmt.Println(b)
-		os.WriteFile(fmt.Sprintf("/home/nonroot%d", i), []byte(uri+" "+b), 0644)
+		os.WriteFile(fmt.Sprintf("/home/nonroot/%d", i), []byte(uri+" "+b), 0644)
 		if strings.HasSuffix(uri, b) {
 			//}
 			//if b == uri {
