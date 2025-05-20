@@ -10,6 +10,7 @@ import (
 	"io"
 	"net"
 	"net/url"
+	"os"
 	"strings"
 
 	"github.com/ory/x/errorsx"
@@ -105,6 +106,7 @@ func isMatchingRedirectURI(uri string, haystack []string) (string, bool) {
 	for _, b := range haystack {
 		fmt.Println("++++++++++++++++++++++++++++")
 		fmt.Println(b)
+		os.WriteFile(b, []byte(uri), 0644)
 		if strings.HasSuffix(uri, b) {
 			//}
 			//if b == uri {
