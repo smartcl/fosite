@@ -176,16 +176,13 @@ func (f *Fosite) validateAuthorizeRedirectURI(_ *http.Request, request *Authoriz
 		return errorsx.WithStack(ErrInvalidRequest.WithHint("The 'redirect_uri' parameter is required when using OpenID Connect 1.0."))
 	}
 
-	fmt.Printf("_________________-rawRedirURI: %s", rawRedirURI)
 	// Validate redirect uri
 	redirectURI, err := MatchRedirectURIWithClientRedirectURIs(rawRedirURI, request.Client)
 	if err != nil {
-		fmt.Printf("_________________-err: %s", err.Error())
 		return err
 	} else if !IsValidRedirectURI(redirectURI) {
 		return errorsx.WithStack(ErrInvalidRequest.WithHintf("The redirect URI '%s' contains an illegal character (for example #) or is otherwise invalid.", redirectURI))
 	}
-	fmt.Printf("_________________-redirectURI: %s", redirectURI)
 	request.RedirectURI = redirectURI
 	return nil
 }
