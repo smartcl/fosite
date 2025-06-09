@@ -10,6 +10,7 @@ import (
 	"io"
 	"net"
 	"net/url"
+	"regexp"
 	"strings"
 
 	"github.com/ory/x/errorsx"
@@ -103,7 +104,12 @@ func isMatchingRedirectURI(uri string, haystack []string) (string, bool) {
 	}
 
 	for _, b := range haystack {
-		if strings.Contains(uri, b) {
+		reg, err := regexp.Compile(b)
+		if err != nil {
+			fmt.Println(err)
+			return "", false
+		}
+		if reg.MatchString(uri) {
 			//}
 			//if b == uri {
 			return uri, true
